@@ -1,8 +1,146 @@
 \appendix
-\section{I am the first appendix}
-\lipsum[2-3]
-\subsection{Sub-appendix}
-\lipsum[2-3]
+\numberwithin{figure}{section}
+\numberwithin{table}{section}
+\numberwithin{equation}{section}
+\section{Experimental Raw Data}
 
-\section{I am the second appendix}
-\lipsum[2-3]
+% Task 1 - Tabelle 1: Einfluss der Katalysatorkonzentration
+\begin{table}[htbp]
+    \centering
+    \caption{Phenol concentration ($c_{\text{phenol}}$ in \si{\milli\gram\per\liter}) over time at $T = \SI{70}{\degreeCelsius}$ ($c^0_{\text{phenol}} = \SI{50}{\milli\gram\per\liter}$, $c^0_{\text{AP}} = \SI{5}{\gram\per\liter}$) for various catalyst concentrations ($c^0_{\mathrm{CuSO_4}}$).}
+    \label{tab:task1_catalyst}
+    \begin{tabular}{ccccc}
+        \toprule
+        \textbf{Time} $t$ & \multicolumn{4}{c}{$c^0_{\mathrm{CuSO_4}}$ [\si{\milli\gram\per\liter}]} \\
+        \cmidrule{2-5}
+        {[\si{\minute}]} & \textbf{25} & \textbf{50} & \textbf{100} & \textbf{150} \\
+        \midrule
+        0  & 50.0 & 50.0 & 50.0 & 50.0 \\
+        1  & 49.5 & 49.0 & 48.7 & 49.6 \\
+        2  & 49.4 & 48.8 & 48.3 & 47.0 \\
+        3  & 48.1 & 47.0 & 46.1 & 44.5 \\
+        4  & 46.6 & 45.2 & 43.9 & 41.9 \\
+        5  & 45.1 & 42.7 & 40.4 & 37.2 \\
+        6  & 43.8 & 41.6 & 39.4 & 36.8 \\
+        7  & 42.4 & 39.8 & 37.2 & 34.2 \\
+        8  & 40.9 & 38.0 & 34.9 & 31.6 \\
+        9  & 39.5 & 36.3 & 32.7 & 29.1 \\
+        10 & 38.2 & 34.3 & 30.3 & 25.7 \\
+        11 & 36.7 & 32.7 & 28.2 & 23.9 \\
+        12 & 35.2 & 30.9 & 26.0 & 21.4 \\
+        13 & 33.8 & 29.1 & 23.8 & 18.8 \\
+        14 & 32.4 & 27.3 & 21.5 & 16.2 \\
+        15 & 30.3 & 24.6 & 18.2 & 11.6 \\
+        16 & 29.5 & 23.7 & 17.1 & 11.1 \\
+        17 & 28.1 & 21.9 & 14.8 & 8.5 \\
+        18 & 26.7 & 20.1 & 12.6 & 5.9 \\
+        19 & 25.2 & 18.3 & 10.4 & 3.4 \\
+        20 & 23.5 & 16.5 & 8.1  & 1.8 \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+% Task 1 - Tabelle 2: Einfluss der Temperatur
+\begin{table}[htbp]
+    \centering
+    \caption{Phenol concentration ($c_{\text{phenol}}$ in \si{\milli\gram\per\liter}) over time at different reaction temperatures ($c^0_{\text{phenol}} = \SI{50}{\milli\gram\per\liter}$, $c^0_{\text{AP}} = \SI{5}{\gram\per\liter}$, $c^0_{\mathrm{CuSO_4}} = \SI{100}{\milli\gram\per\liter}$).}
+    \label{tab:task1_temperature}
+    \begin{tabular}{ccccc}
+        \toprule
+        \textbf{Time} $t$ & \multicolumn{4}{c}{Temperature $T$} \\
+        \cmidrule{2-5}
+        {[\si{\minute}]} & \SI{60}{\degreeCelsius} & \SI{65}{\degreeCelsius} & \SI{70}{\degreeCelsius} & \SI{80}{\degreeCelsius} \\
+        \midrule
+        0  & 50.0 & 50.0 & 50.0 & 50.0 \\
+        1  & 49.9 & 49.7 & 48.7 & 49.9 \\
+        2  & 49.4 & 48.3 & 48.3 & 44.8 \\
+        3  & 48.5 & 47.0 & 46.1 & 40.0 \\
+        4  & 47.7 & 45.6 & 43.9 & 35.1 \\
+        5  & 46.8 & 44.2 & 40.4 & 30.1 \\
+        6  & 46.0 & 42.8 & 39.4 & 25.2 \\
+        7  & 45.2 & 41.5 & 37.2 & 20.3 \\
+        8  & 44.3 & 40.1 & 34.9 & 15.3 \\
+        9  & 43.5 & 38.7 & 32.7 & 10.4 \\
+        10 & 42.7 & 36.2 & 30.3 & 5.5 \\
+        11 & 41.9 & 36.0 & 28.2 & 4.8 \\
+        12 & 41.0 & 34.6 & 26.0 & 3.9 \\
+        13 & 40.2 & 33.2 & 23.8 & 3.1 \\
+        14 & 39.4 & 31.8 & 21.5 & 2.2 \\
+        15 & 38.6 & 30.5 & 18.2 & 1.6 \\
+        16 & 37.7 & 29.1 & 17.1 & --  \\
+        17 & 36.9 & 27.7 & 14.8 & --  \\
+        18 & 36.1 & 26.3 & 12.6 & --  \\
+        19 & 35.3 & 25.0 & 10.4 & --  \\
+        20 & 34.3 & 23.9 & 8.1  & --  \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+% Task 2 - Tabelle: Benzolzersetzung
+\begin{table}[htbp]
+    \centering
+    \caption{Concentration of benzene over time during isothermal decomposition at $T = \SI{30}{\degreeCelsius}$.}
+    \label{tab:task2_benzene}
+    \begin{tabular}{cc@{\hspace{1.5cm}}cc}
+        \toprule
+        \textbf{Time} [\si{\minute}] & $c_{\text{benzene}}$ [\si{\mole\per\liter}] & \textbf{Time} [\si{\minute}] & $c_{\text{benzene}}$ [\si{\mole\per\liter}] \\
+        \midrule
+        0  & 0.500 & 55  & 0.068 \\
+        5  & 0.339 & 60  & 0.060 \\
+        10 & 0.260 & 65  & 0.059 \\
+        15 & 0.189 & 70  & 0.055 \\
+        20 & 0.160 & 75  & 0.052 \\
+        25 & 0.131 & 80  & 0.050 \\
+        30 & 0.114 & 85  & 0.046 \\
+        35 & 0.100 & 90  & 0.044 \\
+        40 & 0.090 & 95  & 0.042 \\
+        45 & 0.081 & 100 & 0.040 \\
+        50 & 0.074 &     &       \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+% Task 3 - Tabelle: Iodoacetamid & N-Acetylcystein
+\begin{table}[htbp]
+    \centering
+    \caption{Concentration of N-acetylcysteine over time at $T = \SI{298}{\kelvin}$ ($c^0_{\text{iodoacetamide}} = c^0_{\text{NAC}} = \SI{1.00}{\mole\per\liter}$).}
+    \label{tab:task3_nac}
+    \begin{tabular}{cc}
+        \toprule
+        \textbf{Time} $t$ [\si{\second}] & \textbf{N-acetylcysteine} [\si{\mole\per\liter}] \\
+        \midrule
+        0  & 1.00 \\
+        5  & 0.78 \\
+        10 & 0.62 \\
+        25 & 0.33 \\
+        35 & 0.21 \\
+        50 & 0.12 \\
+        60 & 0.09 \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+\section{Python Scripts}
+\label{app:python-scripts}
+
+\subsection{Task 1: Phenol Oxidation}
+\lstinputlisting[
+  style=pythoncode,
+  caption={Python code for the kinetic analysis of phenol oxidation.},
+  label={lst:task1-code}
+]{task_1_calc.py}
+
+\subsection{Task 2: Benzene Decomposition}
+\lstinputlisting[
+  style=pythoncode,
+  caption={Python code for the kinetic analysis of benzene decomposition.},
+  label={lst:task2-code}
+]{task_2_calc.py}
+
+\subsection{Task 3: Iodoacetamide and N-Acetylcysteine}
+\lstinputlisting[
+  style=pythoncode,
+  caption={Python code for the differential kinetic analysis of
+  iodoacetamide and N-acetylcysteine.},
+  label={lst:task3-code}
+]{task_3_calc_final.py}

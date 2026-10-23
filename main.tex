@@ -1,59 +1,39 @@
 \documentclass[12pt]{article}
 
 \usepackage{ktu_thesis_style}
-\usepackage{lipsum}  
 
 \begin{document}
 \input{variables.tex}
 
-\input{TitlePage}
+\input{TitlePage.tex}
 
-
-
-\input{PageSecond.tex}
-\input{PageThird.tex}
-\input{PageSummaryEN.tex}
-\input{PageSummaryLT.tex}
-
-
-\setcounter{page}{6} %to include title page in page numbering counter
+\setcounter{page}{2}
 \tableofcontents
-
-
-
-\clearpage
-\listoffigures
-\addcontentsline{toc}{section}{\listfigurename} % Adds "List of Figures" to the table of contents
 
 \clearpage
 \listoftables
-\addcontentsline{toc}{section}{\listtablename} % Adds to the table of contents
+\addcontentsline{toc}{section}{\listtablename}
 
 \clearpage
-\input{chapters/dummy_text.tex}
+\listoffigures
+\addcontentsline{toc}{section}{\listfigurename}
 
+\clearpage
+\input{chapters/report_content.tex}
 
+\clearpage
+\phantomsection
+\addcontentsline{toc}{section}{Conclusions and recommendations}
+\input{chapters/conclusions.tex}
 
-
-\clearpage % Start a new page
-\phantomsection % Create a phantom section for correct linking in the table of contents
-\addcontentsline{toc}{section}{Conclutions} %Add to the table of contents
-\input{chapters/conclutions.tex}
-
-
-
-\clearpage 
-\phantomsection 
+\clearpage
+\phantomsection
 \addcontentsline{toc}{section}{References}
-\bibliography{dummy-bib} % And adding references itself
+\bibliography{references}
 
-\clearpage 
-\phantomsection 
-\addcontentsline{toc}{section}{Appendices}
-\section*{Appendices}
+\clearpage
 \input{chapters/appendix.tex}
 
-% To know how many pages
 \clearpage
 \label{LastPage}
 \end{document}

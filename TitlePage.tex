@@ -1,56 +1,38 @@
-\definecolor{lines_name}{RGB}{212,175,54}
-
 \begin{titlepage}
-   \begin{center}
-   	 
-
-   	%\includegraphics[width=2.46cm\textwidth]{university}
+    \thispagestyle{empty}
+    \begin{center}
         \vspace*{0.3cm}
         \includegraphics[width=2.46cm]{images/ktu-ikona.pdf}
         \vspace{0.3cm}
-		
-       \textbf{Kaunas University of Technology}
-       \\ \projectFaculty
-       
-       \bigskip
-       \vspace{2cm}
-       
-       \LARGE
-		% Needs expandafter otherwise does not capitalize a variable
-        \textbf{\expandafter\capitalisewords\expandafter{\projectTitle}} \\
-        \large
-        	\projectType
-        
-       
-% In case it is needed to sort two supervisors/reviewers per page: https://tex.stackexchange.com/questions/294150/left-and-right-aligned-on-same-line :
-%\begin{minipage}{2in}
-%\textbf{\underline{Student:}} \\
-%Mr. Thatshisname
-%\end{minipage}
-%\hfill
-%\begin{minipage}{1.3in}
-%\textbf{\underline{Supervisor:}} \\
-%Prof. Whatshisname
-%\end{minipage}
-%
 
-       \vspace{1cm}
-       {\color{lines_name} \line(1,0){250} \\}
-       \vspace{1cm}
-       \normalsize\textbf{\projectAuthorName} \\
-       Project Author
-       \vspace{1cm} \\
-       \normalsize\textbf{\projectSupervisorNameFirst} \\
-       Supervisor
-       \vspace{1cm} \\
-       \normalsize\textbf{\projectSupervisorNameSecond} \\
-       Supervisor
-       \vspace{1cm} \\       
-       {\color{lines_name} \line(1,0){250} \\}
+        \textbf{Kaunas University of Technology}\\
+        \facultyName
 
-       \vfill
-            
-       
-       \normalsize{\textbf{\projectCity, \projectYear}}
-   \end{center}
+        \vspace{2cm}
+        {\LARGE\textbf{\labTitle}}
+
+        \vspace{0.4cm}
+        {\large Laboratory work report}
+
+        \vspace{0.4cm}
+        {\large \moduleName\ (\moduleCode)}
+    \end{center}
+
+    \vfill
+    \noindent
+    \begin{minipage}[t]{0.48\textwidth}
+        Prepared by\\[0.15cm]
+        \textbf{\studentName}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{0.48\textwidth}
+        \raggedleft
+        Supervised by\\[0.15cm]
+        \textbf{\supervisorName}
+    \end{minipage}
+
+    \vfill
+    \begin{center}
+        \textbf{\reportCity, \reportYear}
+    \end{center}
 \end{titlepage}

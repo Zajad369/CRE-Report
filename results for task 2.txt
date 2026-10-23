@@ -1,0 +1,25 @@
+===========================================================================
+INTEGRAL METHOD LINEARIZATION RESULTS (T = 30 °C)
+===========================================================================
+Reaction Order Linear Form     Slope  Intercept      R^2  Rate Constant k     Unit of k
+      Zero (0)        C(t) -0.002984   0.270827 0.632865         0.002984 mol / (L*min)
+     First (1)    ln(C(t)) -0.022140  -1.294354 0.900894         0.022140       1 / min
+    Second (2)    1 / C(t)  0.232823   1.821871 0.998840         0.232823 L / (mol*min)
+
+===========================================================================
+EXTRAPOLATION & HALF-LIFE PARAMETERS
+===========================================================================
+                  Parameter      Value          Unit
+Rate constant at 30 °C (k1)     0.2328 L / (mol*min)
+Rate constant at 30 °C (k1)   0.003880   L / (mol*s)
+                     Ea / R    13386.4             K
+                 Delta(1/T) 2.0416e-04         1 / K
+              Ratio k2 / k1      15.38             -
+Rate constant at 50 °C (k2)      3.580 L / (mol*min)
+Rate constant at 50 °C (k2)     0.0597   L / (mol*s)
+  Initial concentration C_0      1.282       mol / L
+   Half-life t_1/2 at 50 °C       0.22           min
+   Half-life t_1/2 at 50 °C       13.1             s
+
+
+

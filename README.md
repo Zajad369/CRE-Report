@@ -1,30 +1,39 @@
-# KTU LaTeX Thesis Template
+# KTU Laboratory Work Report Template
 
-**Unofficial** LaTeX template for Kaunas Technology University (KTU) projects, theses, and other academic documents
+An editable LaTeX template for KTU laboratory work reports.
 
-Dowlonad generated
-[PDF example here](https://github.com/Dominyk4s/KTU-LaTeX/raw/main/main.pdf)
+## Getting started
 
-## Repository Contents
+1. Open the repository folder in VS Code.
+2. Edit `variables.tex` with the information for your report.
+3. Replace the instructional text in `chapters/report_content.tex` and
+   `chapters/conclusions.tex` with your report content.
+4. Add references to `references.bib` and cite them in the report.
+5. Install the recommended **LaTeX Workshop** extension if VS Code asks.
+6. Open `main.tex` and save it. The project builds automatically with MiKTeX
+   and `latexmk`; generated files are placed in `build/`.
+7. Open the PDF using the LaTeX Workshop PDF button or `Ctrl+Alt+V`.
 
-* `main.tex` - Main document file, containing the `\documentclass` and `\begin{document}` commands.
-* `ktu_thesis_style.sty` - Custom KTU LaTeX style file, including settings for spacing, section formatting, and more.
-* `TitlePage.tex` - Customizable title page template for your KTU document.
-* `PageSecond.tex` and `PageThird.tex` - Sample content pages for your thesis or project; remove it from main.tex if it's just a project and it's not needed.
-* `variables.tex` - Defines variables used to populate the main document pages.
+## Where to edit
 
-## Getting Started with KTU LaTeX Thesis Template
+- `variables.tex`: module, title, student, supervisor, city, and year
+- `TitlePage.tex`: cover-page layout
+- `chapters/report_content.tex`: introduction, theory, methods, results, and
+  discussion
+- `chapters/conclusions.tex`: conclusions and recommendations
+- `references.bib`: bibliography entries
 
-1. Fork or clone the repository to your local machine.
-2. Customize the `variables.tex` file with your document's information.
-3. Edit the `TitlePage.tex`, `PageSecond.tex`, and `PageThird.tex` files if the number of supervisors or reviewers is different.
-4. Compile the `main.tex` file using your preferred LaTeX editor or command line tool.
+Keep section headings if you want them to appear in the table of contents.
+Tables and figures are added in the chapter where they are discussed; their
+captions automatically appear in the corresponding lists.
 
+## Requirements
 
-## Contributing
+- [MiKTeX](https://miktex.org/download) with `pdflatex`, `latexmk`, and
+  `bibtex` available on `PATH`
+- Visual Studio Code
+- The VS Code extension `James-Yu.latex-workshop`
 
-We welcome contributions and improvements to the template. Please submit a pull request or open an issue with your suggestions.
-
-## Keywords
-
-Kaunas Technology University, KTU, LaTeX, thesis template, project template, academic document, Kaunas, Lithuania
+MiKTeX should be configured to install missing packages automatically. On the
+first build, MiKTeX may download packages and fonts; this can take a few
+minutes.
