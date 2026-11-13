@@ -1,0 +1,120 @@
+\clearpage
+\newgeometry{left=18mm,right=18mm,top=18mm,bottom=18mm}
+\thispagestyle{empty}
+\begingroup
+\footnotesize
+\rmfamily
+\setlength{\parskip}{0pt}
+\setlength{\parindent}{0pt}
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1}
+
+% Switch to \genaiusedfalse if no generative AI was used.
+\newif\ifgenaiused
+\genaiusedtrue
+\newcommand{\emptydeclarationbox}{\fbox{\rule{0pt}{1.5ex}\rule{1.5ex}{0pt}}}
+\newcommand{\checkeddeclarationbox}{%
+    \fbox{\makebox[1.5ex][c]{\rule{0pt}{1.5ex}\scriptsize X}}}
+
+\begin{flushright}
+    \begin{minipage}{0.46\textwidth}
+        Appendix 1 to the\\
+        Rules on the Use of Generative Artificial\\
+        Intelligence in the Study Process at Kaunas\\
+        University of Technology
+    \end{minipage}
+\end{flushright}
+
+\vspace{0mm}
+\begin{center}
+    \textbf{(Form of the Declaration of the Use of Generative Artificial Intelligence (GenAI))}
+
+    \vspace{2mm}
+    \resizebox{\textwidth}{!}{%
+        \textbf{DECLARATION OF THE USE OF GENERATIVE ARTIFICIAL INTELLIGENCE (GenAI)}}
+
+    \vspace{1mm}
+    \rule{21mm}{0.3pt}
+\end{center}
+
+\vspace{2mm}
+\textbf{1. Student Information}
+
+\vspace{2mm}
+\begin{tabularx}{\textwidth}{|>{\bfseries}p{0.33\textwidth}|X|}
+    \hline
+    Student’s name and surname & \studentName \\ \hline
+    Student’s faculty & \facultyName \\ \hline
+    Study module & \moduleName \\ \hline
+    Title of the study assignment & \labTitle \\ \hline
+    Type of the study assignment & Laboratory work report \\ \hline
+\end{tabularx}
+
+\vspace{3mm}
+\textbf{2. Confirmation of GenAI Use}
+
+\textit{Select one option:}
+
+\vspace{2mm}
+\begin{tabularx}{\textwidth}{|>{\centering\arraybackslash}p{9mm}|X|}
+    \hline
+    \rule{0pt}{3mm}\ifgenaiused\emptydeclarationbox\else\checkeddeclarationbox\fi
+    &
+    {\footnotesize\textbf{I did not use generative artificial intelligence tools when preparing this study assignment}}\newline
+    I confirm that the content presented in the study assignment is my authentic intellectual work
+    and that the sources used are cited in accordance with the applicable citation requirements.
+    \\ \hline
+    \rule{0pt}{3mm}\ifgenaiused\checkeddeclarationbox\else\emptydeclarationbox\fi
+    &
+    {\footnotesize\textbf{I used generative artificial intelligence tools when preparing this study assignment}}\newline
+    I confirm that GenAI tools were used in accordance with the GenAI use requirements established
+    for the study module and that their use has been declared transparently and honestly.
+    \\ \hline
+\end{tabularx}
+
+\vspace{2mm}
+\textbf{3. Information on GenAI Use}
+
+\textit{Complete if you used generative artificial intelligence tools when preparing the study assignment:}
+
+\vspace{2mm}
+\begin{tabularx}{\textwidth}{|
+    >{\raggedright\arraybackslash}p{0.20\textwidth}|
+    >{\raggedright\arraybackslash}p{0.20\textwidth}|
+    >{\raggedright\arraybackslash}p{0.25\textwidth}|
+    >{\raggedright\arraybackslash}X|}
+    \hline
+    \textbf{Part of the assignment}\newline
+    (e.g., section, entire assignment)
+    &
+    \textbf{Purpose of using the GenAI tool}
+    &
+    \textbf{Name and version of the GenAI tool/web link}
+    &
+    \textbf{Student’s contribution}\newline
+    (how the GenAI output was verified, edited, or supplemented by the student)
+    \\ \hline
+    \rule{0pt}{2mm} Entire Assignment & checking for grammar, spelling and language mistakes. AI marked mistakes and provided suggestions. & Google Gemini; Model 3.6 Flash; Link: https://gemini.google.com & AI recommendations for improvement were reviewed individually, and corrections were made manually. \\ \hline
+    \rule{0pt}{2mm} Theory, Methods and Results & translation of german drafts into english & Google Gemini; Model 3.6 Flash; Link: https://gemini.google.com & Reviewed and checked the generated the text carefully against the original, and edited the generated translation. \\ \hline
+    \rule{0pt}{2mm} Methods and results; Appendix & Assistance with code implementation and refactoring; output standardization (structure and formatting); generating figures and tables for LaTeX & GitHub Copilot; Link: https://copilot.github.com & Defined the calculation methods, mathematical procedures, program structure, input parameters, and output format. Reviewed and validated all AI-generated code, functions, calculations, and numerical results. Verified the correct use of Python libraries and integrated the final code into the study assignment. \\ \hline
+\end{tabularx}
+
+\vspace{4mm}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}l c c@{}}
+    Student
+    & \makebox[42mm]{\hrulefill}
+    & \makebox[58mm][c]{\studentName}\\[-2mm]
+    &
+    & \makebox[58mm]{\hrulefill} \\
+    &
+    {\footnotesize (signature)\textsuperscript{1}}
+    &
+    {\footnotesize (name, surname)} \\
+\end{tabular*}
+
+\vfill
+\rule{52mm}{0.3pt}\par\vspace{-1mm}
+{\footnotesize\textsuperscript{1} The student’s signature is required when the declaration is submitted in printed (non-electronic) form.}
+\endgroup
+\clearpage
+\restoregeometry
